@@ -1,0 +1,4223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7cdf8623c6e921e26546820ebea4c66b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7cdf8623c6e921e26546820ebea4c66b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7cdf8623c6e921e26546820ebea4c66b = L.map(
+                "map_7cdf8623c6e921e26546820ebea4c66b",
+                {
+                    center: [56.0, -96.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "maxBounds": null,
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a8e6c0a90f95ff6fbfc6687605cff539 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a8e6c0a90f95ff6fbfc6687605cff539.addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var marker_fec8d68de1d780e3e3a53898bd8f0714 = L.marker(
+                [49.7460544, -95.2158185],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_4a8cc414adb7252beb1fd98a5a5fbd0f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fec8d68de1d780e3e3a53898bd8f0714.setIcon(icon_4a8cc414adb7252beb1fd98a5a5fbd0f);
+        
+    
+        var popup_915b17d27a549dc9d7815f79576465d9 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_2b7e0f81617a1444e499bb086cacee29 = $(`<div id="html_2b7e0f81617a1444e499bb086cacee29" style="width: 100.0%; height: 100.0%;">HWY #1 West, Manitoba, Canada</div>`)[0];
+                popup_915b17d27a549dc9d7815f79576465d9.setContent(html_2b7e0f81617a1444e499bb086cacee29);
+            
+        
+
+        marker_fec8d68de1d780e3e3a53898bd8f0714.bindPopup(popup_915b17d27a549dc9d7815f79576465d9)
+        ;
+
+        
+    
+    
+            var marker_792005a9ba14994aacdfa19cc0820ab8 = L.marker(
+                [49.7460544, -95.2158185],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_e4d12b903ffef007f4a21d17a8137bff = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eAgWest Ltd.\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eA\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_792005a9ba14994aacdfa19cc0820ab8.setIcon(div_icon_e4d12b903ffef007f4a21d17a8137bff);
+        
+    
+            var marker_43c54ead582904d608cd00682d62ad80 = L.marker(
+                [49.0000829, -95.3766982],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_35b4076f5fd22a87d5f36249c3286bce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_43c54ead582904d608cd00682d62ad80.setIcon(icon_35b4076f5fd22a87d5f36249c3286bce);
+        
+    
+        var popup_baa6c695f88457ce4503eaa7fd6d4d8c = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_77c06ece3ae24856215d9fd60d4a31a7 = $(`<div id="html_77c06ece3ae24856215d9fd60d4a31a7" style="width: 100.0%; height: 100.0%;">76121 MB-12, Manitoba, Canada</div>`)[0];
+                popup_baa6c695f88457ce4503eaa7fd6d4d8c.setContent(html_77c06ece3ae24856215d9fd60d4a31a7);
+            
+        
+
+        marker_43c54ead582904d608cd00682d62ad80.bindPopup(popup_baa6c695f88457ce4503eaa7fd6d4d8c)
+        ;
+
+        
+    
+    
+            var marker_b75ae97a7b820db9c017d3570367ea17 = L.marker(
+                [49.0000829, -95.3766982],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_acd09eb350042d09d212039034233616 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eCromwell Performance \u0026 Repair\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eA\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_b75ae97a7b820db9c017d3570367ea17.setIcon(div_icon_acd09eb350042d09d212039034233616);
+        
+    
+            var marker_4a9cff457791f23be70a69c9a44a62e0 = L.marker(
+                [49.973598, -98.3397961],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_df58f6c39ea2dd68d849d95b9fc1f9f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4a9cff457791f23be70a69c9a44a62e0.setIcon(icon_df58f6c39ea2dd68d849d95b9fc1f9f8);
+        
+    
+        var popup_89f322b59a34bc2d0decfda312f39c57 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_161ff305a4d2faa619872f7e9c64593a = $(`<div id="html_161ff305a4d2faa619872f7e9c64593a" style="width: 100.0%; height: 100.0%;">2610 Saskatchewan Ave W, Manitoba, Canada</div>`)[0];
+                popup_89f322b59a34bc2d0decfda312f39c57.setContent(html_161ff305a4d2faa619872f7e9c64593a);
+            
+        
+
+        marker_4a9cff457791f23be70a69c9a44a62e0.bindPopup(popup_89f322b59a34bc2d0decfda312f39c57)
+        ;
+
+        
+    
+    
+            var marker_5e2fd7f0ad26590c22396e97e132f7f1 = L.marker(
+                [49.973598, -98.3397961],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_aec3507e2788bbf5d5c7accfa5d77206 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eGenAG Inc\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eA\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_5e2fd7f0ad26590c22396e97e132f7f1.setIcon(div_icon_aec3507e2788bbf5d5c7accfa5d77206);
+        
+    
+            var marker_9713efb242aaa0125bb370c906ca661d = L.marker(
+                [49.8192523, -99.9624329],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_1e7554fcf3534115591efbe598fc1af4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9713efb242aaa0125bb370c906ca661d.setIcon(icon_1e7554fcf3534115591efbe598fc1af4);
+        
+    
+        var popup_3a17275f0341169d072eb298b2e45fa8 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_ad95f2b5d4a5664c6afe87ece0954674 = $(`<div id="html_ad95f2b5d4a5664c6afe87ece0954674" style="width: 100.0%; height: 100.0%;">1908 Currie Blvd, Manitoba, Canada</div>`)[0];
+                popup_3a17275f0341169d072eb298b2e45fa8.setContent(html_ad95f2b5d4a5664c6afe87ece0954674);
+            
+        
+
+        marker_9713efb242aaa0125bb370c906ca661d.bindPopup(popup_3a17275f0341169d072eb298b2e45fa8)
+        ;
+
+        
+    
+    
+            var marker_a789b31c5b6f15b628d045fcaf5ab7fa = L.marker(
+                [49.8192523, -99.9624329],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_c770697667fa3162e2dee8ea24691e67 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eMazorgroup\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eA\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_a789b31c5b6f15b628d045fcaf5ab7fa.setIcon(div_icon_c770697667fa3162e2dee8ea24691e67);
+        
+    
+            var marker_8d708bc3fa82422f7e93c4082266d26a = L.marker(
+                [49.8192523, -99.9624329],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_e1e8fba7b5d8d48fc0093b4708e5c50c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8d708bc3fa82422f7e93c4082266d26a.setIcon(icon_e1e8fba7b5d8d48fc0093b4708e5c50c);
+        
+    
+        var popup_4f165adc1e5b14baedfa1588ebc85f75 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_f3886cd59dd5431dde3b62cfc460a262 = $(`<div id="html_f3886cd59dd5431dde3b62cfc460a262" style="width: 100.0%; height: 100.0%;">1909 Currie Blvd., Manitoba, Canada</div>`)[0];
+                popup_4f165adc1e5b14baedfa1588ebc85f75.setContent(html_f3886cd59dd5431dde3b62cfc460a262);
+            
+        
+
+        marker_8d708bc3fa82422f7e93c4082266d26a.bindPopup(popup_4f165adc1e5b14baedfa1588ebc85f75)
+        ;
+
+        
+    
+    
+            var marker_0937ad76e14cade294b822c6d606bb8d = L.marker(
+                [49.8192523, -99.9624329],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_9616acb18e82bdb40a23cc4b1bfaa8fb = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eMazergroup\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eA\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_0937ad76e14cade294b822c6d606bb8d.setIcon(div_icon_9616acb18e82bdb40a23cc4b1bfaa8fb);
+        
+    
+            var marker_06ac14265d9b30b427230817d1b26a38 = L.marker(
+                [49.8821847, -97.0041466],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_8b2695de17e7b1afe063fb9c0cd83690 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_06ac14265d9b30b427230817d1b26a38.setIcon(icon_8b2695de17e7b1afe063fb9c0cd83690);
+        
+    
+        var popup_d18c55dc02f9f8dd8df1040e9904aa25 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_ca485a372aba891193af5d1ab5347b0e = $(`<div id="html_ca485a372aba891193af5d1ab5347b0e" style="width: 100.0%; height: 100.0%;">57093 Symington Rd, Manitoba, Canada</div>`)[0];
+                popup_d18c55dc02f9f8dd8df1040e9904aa25.setContent(html_ca485a372aba891193af5d1ab5347b0e);
+            
+        
+
+        marker_06ac14265d9b30b427230817d1b26a38.bindPopup(popup_d18c55dc02f9f8dd8df1040e9904aa25)
+        ;
+
+        
+    
+    
+            var marker_3928a45235611681bab25bcaa59d4649 = L.marker(
+                [49.8821847, -97.0041466],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_37f6035d435a73d98f1e099683d17e53 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eMazergroup\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eA\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_3928a45235611681bab25bcaa59d4649.setIcon(div_icon_37f6035d435a73d98f1e099683d17e53);
+        
+    
+            var marker_7ddcd7b376ee31d717d1e418bc5afc2f = L.marker(
+                [49.8361768, -97.1669993],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_32d94ab0a15cbc7f169affc9f3ef106e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7ddcd7b376ee31d717d1e418bc5afc2f.setIcon(icon_32d94ab0a15cbc7f169affc9f3ef106e);
+        
+    
+        var popup_c892c2ebaba4728c4b8f8f8bcc537b3d = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_643c4853481c197089f839e25ad22427 = $(`<div id="html_643c4853481c197089f839e25ad22427" style="width: 100.0%; height: 100.0%;">10 Irene St, Manitoba, Canada</div>`)[0];
+                popup_c892c2ebaba4728c4b8f8f8bcc537b3d.setContent(html_643c4853481c197089f839e25ad22427);
+            
+        
+
+        marker_7ddcd7b376ee31d717d1e418bc5afc2f.bindPopup(popup_c892c2ebaba4728c4b8f8f8bcc537b3d)
+        ;
+
+        
+    
+    
+            var marker_21c93447e5de6c180ffb9eff158ba328 = L.marker(
+                [49.8361768, -97.1669993],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_b7556837b7606fcfcb6b405c43ab471f = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eBattlefield Equipment Rentals\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eC\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_21c93447e5de6c180ffb9eff158ba328.setIcon(div_icon_b7556837b7606fcfcb6b405c43ab471f);
+        
+    
+            var marker_28a6c1de97a3ff7d28def9ea61cdf5fe = L.marker(
+                [49.8213573, -97.2007752],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_6fc23c1cf0b60398cf0b313a3514874a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_28a6c1de97a3ff7d28def9ea61cdf5fe.setIcon(icon_6fc23c1cf0b60398cf0b313a3514874a);
+        
+    
+        var popup_cd4e3e6339bca225b633af2cab4a1568 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_ae2b990380d0bea9cf4cafb753ba3a75 = $(`<div id="html_ae2b990380d0bea9cf4cafb753ba3a75" style="width: 100.0%; height: 100.0%;">4000 McGillivray Blvd, Manitoba, Canada</div>`)[0];
+                popup_cd4e3e6339bca225b633af2cab4a1568.setContent(html_ae2b990380d0bea9cf4cafb753ba3a75);
+            
+        
+
+        marker_28a6c1de97a3ff7d28def9ea61cdf5fe.bindPopup(popup_cd4e3e6339bca225b633af2cab4a1568)
+        ;
+
+        
+    
+    
+            var marker_200784786991cf3fc9b872d5c044f2da = L.marker(
+                [49.8213573, -97.2007752],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_a179e0948c6fb77dc29e259ce5bc2fae = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eBayview Construction\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eC\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_200784786991cf3fc9b872d5c044f2da.setIcon(div_icon_a179e0948c6fb77dc29e259ce5bc2fae);
+        
+    
+            var marker_d170e7867a8c6efda65dc61f13637694 = L.marker(
+                [49.8037852, -97.2446767],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_aced5b722f3b19b74e34c2b35320406e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d170e7867a8c6efda65dc61f13637694.setIcon(icon_aced5b722f3b19b74e34c2b35320406e);
+        
+    
+        var popup_b123179f1d655b9c31bdaa7a9d9e7ac2 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_4b7f7537edc13d3e6328b5677740b652 = $(`<div id="html_4b7f7537edc13d3e6328b5677740b652" style="width: 100.0%; height: 100.0%;">3700 McGillivray Blvd, Manitoba, Canada</div>`)[0];
+                popup_b123179f1d655b9c31bdaa7a9d9e7ac2.setContent(html_4b7f7537edc13d3e6328b5677740b652);
+            
+        
+
+        marker_d170e7867a8c6efda65dc61f13637694.bindPopup(popup_b123179f1d655b9c31bdaa7a9d9e7ac2)
+        ;
+
+        
+    
+    
+            var marker_acd219c8984ca063115e4de203b57a0f = L.marker(
+                [49.8037852, -97.2446767],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_119269aa4ac5be96a21468cdfddb7013 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eBrandt Tractor Ltd.\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eC\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_acd219c8984ca063115e4de203b57a0f.setIcon(div_icon_119269aa4ac5be96a21468cdfddb7013);
+        
+    
+            var marker_338e9e8dd8eccb7ab26c438032c5630a = L.marker(
+                [49.831384, -97.1633933],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_f33ba456a1f13944cd7b8915a7e66324 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_338e9e8dd8eccb7ab26c438032c5630a.setIcon(icon_f33ba456a1f13944cd7b8915a7e66324);
+        
+    
+        var popup_48beb4ad8234e64522dc3d15cde672f6 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_a2a5c6febf0062aa5968cac4cdc9b357 = $(`<div id="html_a2a5c6febf0062aa5968cac4cdc9b357" style="width: 100.0%; height: 100.0%;">1260 Clarence Ave, Manitoba, Canada</div>`)[0];
+                popup_48beb4ad8234e64522dc3d15cde672f6.setContent(html_a2a5c6febf0062aa5968cac4cdc9b357);
+            
+        
+
+        marker_338e9e8dd8eccb7ab26c438032c5630a.bindPopup(popup_48beb4ad8234e64522dc3d15cde672f6)
+        ;
+
+        
+    
+    
+            var marker_48074f287dc123fd4fe51ddee590ce9c = L.marker(
+                [49.831384, -97.1633933],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_3c3823875f225113de93c0e0ade2947b = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eBuhler Industries Inc\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eC\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_48074f287dc123fd4fe51ddee590ce9c.setIcon(div_icon_3c3823875f225113de93c0e0ade2947b);
+        
+    
+            var marker_9b5843a79a522460090470dd56a90ef0 = L.marker(
+                [49.9388726, -97.2252166],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_389005ca08498fc5d74aa49a8de5717a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9b5843a79a522460090470dd56a90ef0.setIcon(icon_389005ca08498fc5d74aa49a8de5717a);
+        
+    
+        var popup_9ea8f17469eca05b268fdc5f9397b696 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_2aacd952b39bf64d0bf730c5239d9fda = $(`<div id="html_2aacd952b39bf64d0bf730c5239d9fda" style="width: 100.0%; height: 100.0%;">465 Egesz Street, Manitoba, Canada</div>`)[0];
+                popup_9ea8f17469eca05b268fdc5f9397b696.setContent(html_2aacd952b39bf64d0bf730c5239d9fda);
+            
+        
+
+        marker_9b5843a79a522460090470dd56a90ef0.bindPopup(popup_9ea8f17469eca05b268fdc5f9397b696)
+        ;
+
+        
+    
+    
+            var marker_28893666f37b7e711739cf4181f584d2 = L.marker(
+                [49.9388726, -97.2252166],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_9e4c2efde91e8cb48ab5282b6e13ee76 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eCervus Equipment - Forklifts Winnipeg\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eC\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_28893666f37b7e711739cf4181f584d2.setIcon(div_icon_9e4c2efde91e8cb48ab5282b6e13ee76);
+        
+    
+            var marker_38ae7c417954e8f0a294a2d4bca0c06d = L.marker(
+                [49.8893779, -97.0628402],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_18e3a895fa011912e456bea0af0428b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_38ae7c417954e8f0a294a2d4bca0c06d.setIcon(icon_18e3a895fa011912e456bea0af0428b0);
+        
+    
+        var popup_a36652e46d5b8f40fc9e9a3af2ec8206 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_b9b324cea41cb1d51feaa9b12bb8e480 = $(`<div id="html_b9b324cea41cb1d51feaa9b12bb8e480" style="width: 100.0%; height: 100.0%;">33 Terracon Place, Manitoba, Canada</div>`)[0];
+                popup_a36652e46d5b8f40fc9e9a3af2ec8206.setContent(html_b9b324cea41cb1d51feaa9b12bb8e480);
+            
+        
+
+        marker_38ae7c417954e8f0a294a2d4bca0c06d.bindPopup(popup_a36652e46d5b8f40fc9e9a3af2ec8206)
+        ;
+
+        
+    
+    
+            var marker_fe0dc0323e242eeb69d6d4040535cd9d = L.marker(
+                [49.8893779, -97.0628402],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_80bdfb963643bf672630778191541a11 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eCPB Equipment\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eC\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_fe0dc0323e242eeb69d6d4040535cd9d.setIcon(div_icon_80bdfb963643bf672630778191541a11);
+        
+    
+            var marker_32d42ee1f5ffaf09c03eb867c5e1258a = L.marker(
+                [49.9275612, -97.0022337],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_55b0e7a19e7724dc2a907baf7d2f41c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_32d42ee1f5ffaf09c03eb867c5e1258a.setIcon(icon_55b0e7a19e7724dc2a907baf7d2f41c2);
+        
+    
+        var popup_8a11e9ed1c4bca18160e3876a3355267 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_e7e3c26a1145247aa516ad1664a487c3 = $(`<div id="html_e7e3c26a1145247aa516ad1664a487c3" style="width: 100.0%; height: 100.0%;">1076 Oxford St W, Manitoba, Canada</div>`)[0];
+                popup_8a11e9ed1c4bca18160e3876a3355267.setContent(html_e7e3c26a1145247aa516ad1664a487c3);
+            
+        
+
+        marker_32d42ee1f5ffaf09c03eb867c5e1258a.bindPopup(popup_8a11e9ed1c4bca18160e3876a3355267)
+        ;
+
+        
+    
+    
+            var marker_65ef194e840b24ceabda57576a7d5819 = L.marker(
+                [49.9275612, -97.0022337],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_c50c591d6eccf993761602af7cb7b1cc = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eCrown Pipeline\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eC\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_65ef194e840b24ceabda57576a7d5819.setIcon(div_icon_c50c591d6eccf993761602af7cb7b1cc);
+        
+    
+            var marker_3831368ee561ae1fe7f446c95dc6a5af = L.marker(
+                [49.9834085, -97.1216157],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_5c57025f2a21d8d4d6386c073ba49f04 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3831368ee561ae1fe7f446c95dc6a5af.setIcon(icon_5c57025f2a21d8d4d6386c073ba49f04);
+        
+    
+        var popup_c91577b7cecc638ee071d530d7c9d95b = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_3178c69465d93eefff499f9f524d383c = $(`<div id="html_3178c69465d93eefff499f9f524d383c" style="width: 100.0%; height: 100.0%;">42 St Paul Blvd, Manitoba, Canada</div>`)[0];
+                popup_c91577b7cecc638ee071d530d7c9d95b.setContent(html_3178c69465d93eefff499f9f524d383c);
+            
+        
+
+        marker_3831368ee561ae1fe7f446c95dc6a5af.bindPopup(popup_c91577b7cecc638ee071d530d7c9d95b)
+        ;
+
+        
+    
+    
+            var marker_05db2ae69cd620bb2ddbcc9c593127d8 = L.marker(
+                [49.9834085, -97.1216157],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_4c64ccbca19c19508a4a35b1d7660bd3 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eCubex Limited\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eC\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_05db2ae69cd620bb2ddbcc9c593127d8.setIcon(div_icon_4c64ccbca19c19508a4a35b1d7660bd3);
+        
+    
+            var marker_7188443d70dc15e98ee9a4d932c93b2c = L.marker(
+                [49.9459835, -97.2541419],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_a0c0d54bc41433f3fd07ab2e3dbf0245 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7188443d70dc15e98ee9a4d932c93b2c.setIcon(icon_a0c0d54bc41433f3fd07ab2e3dbf0245);
+        
+    
+        var popup_d4e3fd8a590ca2c11880d85431386e53 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_20d89b9d840cb3b7d5007ae95ed88227 = $(`<div id="html_20d89b9d840cb3b7d5007ae95ed88227" style="width: 100.0%; height: 100.0%;">3120 Red Fife Road, Manitoba, Canada</div>`)[0];
+                popup_d4e3fd8a590ca2c11880d85431386e53.setContent(html_20d89b9d840cb3b7d5007ae95ed88227);
+            
+        
+
+        marker_7188443d70dc15e98ee9a4d932c93b2c.bindPopup(popup_d4e3fd8a590ca2c11880d85431386e53)
+        ;
+
+        
+    
+    
+            var marker_ff0f8b27f1553b263ef1e2ec3a1e73f6 = L.marker(
+                [49.9459835, -97.2541419],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_1497b771e79dda99a1f8d9f2bb5a0343 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eDuron Equipment Inc.\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eC\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_ff0f8b27f1553b263ef1e2ec3a1e73f6.setIcon(div_icon_1497b771e79dda99a1f8d9f2bb5a0343);
+        
+    
+            var marker_ddd265171baa7a74ad22218a44f2a2c6 = L.marker(
+                [49.931727, -97.2157643],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_bafb4110948e10554b979981a2a4c6d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ddd265171baa7a74ad22218a44f2a2c6.setIcon(icon_bafb4110948e10554b979981a2a4c6d3);
+        
+    
+        var popup_057018f411ea901b4beb8b60f305fa74 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_28dda2418c8b2f8adc663ddc29888de7 = $(`<div id="html_28dda2418c8b2f8adc663ddc29888de7" style="width: 100.0%; height: 100.0%;">841 Oak Point Hwy, Manitoba, Canada</div>`)[0];
+                popup_057018f411ea901b4beb8b60f305fa74.setContent(html_28dda2418c8b2f8adc663ddc29888de7);
+            
+        
+
+        marker_ddd265171baa7a74ad22218a44f2a2c6.bindPopup(popup_057018f411ea901b4beb8b60f305fa74)
+        ;
+
+        
+    
+    
+            var marker_470262ad6157fbb87af199e8a68136fe = L.marker(
+                [49.931727, -97.2157643],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_eff813b19b5b5dd490fb0e52f776b3fb = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eGeneral Aggregate Equipment Sales, ULC\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eC\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_470262ad6157fbb87af199e8a68136fe.setIcon(div_icon_eff813b19b5b5dd490fb0e52f776b3fb);
+        
+    
+            var marker_7e6edda3ec03da54ab282b66721d4884 = L.marker(
+                [49.8133061, -97.2214725],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_9dad1349d538183705758d6b294ff967 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7e6edda3ec03da54ab282b66721d4884.setIcon(icon_9dad1349d538183705758d6b294ff967);
+        
+    
+        var popup_49595ef6483b343b0a1002567698ecf7 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_7e65315bb271647fe18143ed5ee493bc = $(`<div id="html_7e65315bb271647fe18143ed5ee493bc" style="width: 100.0%; height: 100.0%;">2560 McGillivray Blvd, Manitoba, Canada</div>`)[0];
+                popup_49595ef6483b343b0a1002567698ecf7.setContent(html_7e65315bb271647fe18143ed5ee493bc);
+            
+        
+
+        marker_7e6edda3ec03da54ab282b66721d4884.bindPopup(popup_49595ef6483b343b0a1002567698ecf7)
+        ;
+
+        
+    
+    
+            var marker_01dfa59a773ff88316bfd3cecf57cf63 = L.marker(
+                [49.8133061, -97.2214725],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_a459acaac777a9872d71130c78d9ee2f = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eJ \u0026 D Penner Ltd.\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eC\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_01dfa59a773ff88316bfd3cecf57cf63.setIcon(div_icon_a459acaac777a9872d71130c78d9ee2f);
+        
+    
+            var marker_b647b7338f619dab58b9b9fb632bf52d = L.marker(
+                [49.9743291, -97.0741227],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_72197c452253b4c2b9bc5bad9768586f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b647b7338f619dab58b9b9fb632bf52d.setIcon(icon_72197c452253b4c2b9bc5bad9768586f);
+        
+    
+        var popup_89d8b98d7bdf277b223dc4e3f2b369ec = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_aae3086ddf04c436ecaaadb1d32e7d56 = $(`<div id="html_aae3086ddf04c436ecaaadb1d32e7d56" style="width: 100.0%; height: 100.0%;">1087 Kapelus Dr, Manitoba, Canada</div>`)[0];
+                popup_89d8b98d7bdf277b223dc4e3f2b369ec.setContent(html_aae3086ddf04c436ecaaadb1d32e7d56);
+            
+        
+
+        marker_b647b7338f619dab58b9b9fb632bf52d.bindPopup(popup_89d8b98d7bdf277b223dc4e3f2b369ec)
+        ;
+
+        
+    
+    
+            var marker_12695080234f9b6b15cf5661cb3f315f = L.marker(
+                [49.9743291, -97.0741227],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_f09145ecfd4eb1729ce921a5d353c764 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eJoe Johnson Equipment\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eC\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_12695080234f9b6b15cf5661cb3f315f.setIcon(div_icon_f09145ecfd4eb1729ce921a5d353c764);
+        
+    
+            var marker_0ff9149def66e98da16060fd6018fe9a = L.marker(
+                [49.8554188, -97.1547011],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_77581229b0603ed1137becbeaf58c851 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0ff9149def66e98da16060fd6018fe9a.setIcon(icon_77581229b0603ed1137becbeaf58c851);
+        
+    
+        var popup_90d0fb4e785d1d25cd995d852ede968b = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_f7ef37ed25e78fba57a071b7cf4abd04 = $(`<div id="html_f7ef37ed25e78fba57a071b7cf4abd04" style="width: 100.0%; height: 100.0%;">700 Harrow St, Manitoba, Canada</div>`)[0];
+                popup_90d0fb4e785d1d25cd995d852ede968b.setContent(html_f7ef37ed25e78fba57a071b7cf4abd04);
+            
+        
+
+        marker_0ff9149def66e98da16060fd6018fe9a.bindPopup(popup_90d0fb4e785d1d25cd995d852ede968b)
+        ;
+
+        
+    
+    
+            var marker_edfbb5b8c875a41e52492e5d198e195d = L.marker(
+                [49.8554188, -97.1547011],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_57c9f73d26b0005d8e54264cda810298 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eManitoba Hydro\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eC\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_edfbb5b8c875a41e52492e5d198e195d.setIcon(div_icon_57c9f73d26b0005d8e54264cda810298);
+        
+    
+            var marker_bcabcad603cbc43b51feba90f9f4e1c4 = L.marker(
+                [49.9550319, -97.2222031],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_547253009eaa2c35f4730c05b99ad60c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bcabcad603cbc43b51feba90f9f4e1c4.setIcon(icon_547253009eaa2c35f4730c05b99ad60c);
+        
+    
+        var popup_b7b0904771716ffaf40ed6505b24fa67 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_b0f2eda621267e5cde6804d60432abaf = $(`<div id="html_b0f2eda621267e5cde6804d60432abaf" style="width: 100.0%; height: 100.0%;">185 Meridian Dr, Manitoba, Canada</div>`)[0];
+                popup_b7b0904771716ffaf40ed6505b24fa67.setContent(html_b0f2eda621267e5cde6804d60432abaf);
+            
+        
+
+        marker_bcabcad603cbc43b51feba90f9f4e1c4.bindPopup(popup_b7b0904771716ffaf40ed6505b24fa67)
+        ;
+
+        
+    
+    
+            var marker_6d48691e97a95f35b14c50ecaa59f124 = L.marker(
+                [49.9550319, -97.2222031],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_88df8b09841af17c7adf69efef17e014 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eMaple Leaf Construction Ltd\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003ey\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_6d48691e97a95f35b14c50ecaa59f124.setIcon(div_icon_88df8b09841af17c7adf69efef17e014);
+        
+    
+            var marker_ef4e1787e3d7a2309f5c4ee6938d0df8 = L.marker(
+                [49.9489224, -97.2279048],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_1105dfe17582f11dd1dd4204541547a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ef4e1787e3d7a2309f5c4ee6938d0df8.setIcon(icon_1105dfe17582f11dd1dd4204541547a6);
+        
+    
+        var popup_a75aeebe6248541387e014821edac970 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_c7ef208e287334c3030f2cb0aca49e22 = $(`<div id="html_c7ef208e287334c3030f2cb0aca49e22" style="width: 100.0%; height: 100.0%;">140 Inksbrook Dr, Manitoba, Canada</div>`)[0];
+                popup_a75aeebe6248541387e014821edac970.setContent(html_c7ef208e287334c3030f2cb0aca49e22);
+            
+        
+
+        marker_ef4e1787e3d7a2309f5c4ee6938d0df8.bindPopup(popup_a75aeebe6248541387e014821edac970)
+        ;
+
+        
+    
+    
+            var marker_195feabd395625e622da33aec4d77f4c = L.marker(
+                [49.9489224, -97.2279048],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_5029dd20891f76861d2bad73a141f1b8 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eToromont CAT\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eC\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_195feabd395625e622da33aec4d77f4c.setIcon(div_icon_5029dd20891f76861d2bad73a141f1b8);
+        
+    
+            var marker_02fbdb1ded97d6b3b1f3235bce26b139 = L.marker(
+                [50.0746741, -96.9622316],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_bb8bf492344650265c66db8faec5e342 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_02fbdb1ded97d6b3b1f3235bce26b139.setIcon(icon_bb8bf492344650265c66db8faec5e342);
+        
+    
+        var popup_d97dc01702dd3e8d4dbe60c4e6b573e8 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_08a93938b19ea583fda797c751bd05e6 = $(`<div id="html_08a93938b19ea583fda797c751bd05e6" style="width: 100.0%; height: 100.0%;">97 Nicola Dr, Manitoba, Canada</div>`)[0];
+                popup_d97dc01702dd3e8d4dbe60c4e6b573e8.setContent(html_08a93938b19ea583fda797c751bd05e6);
+            
+        
+
+        marker_02fbdb1ded97d6b3b1f3235bce26b139.bindPopup(popup_d97dc01702dd3e8d4dbe60c4e6b573e8)
+        ;
+
+        
+    
+    
+            var marker_9631158f85e218d0f1b29b0b02df7505 = L.marker(
+                [50.0746741, -96.9622316],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_ce2b947978c3ee50bd26695cd93397e9 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eValard Construction\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eC\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_9631158f85e218d0f1b29b0b02df7505.setIcon(div_icon_ce2b947978c3ee50bd26695cd93397e9);
+        
+    
+            var marker_060e79be84268b47ecc9cb75820bd47f = L.marker(
+                [49.9103768, -97.1965045],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_7842014a9b5ee9d34e446dae945ea1f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_060e79be84268b47ecc9cb75820bd47f.setIcon(icon_7842014a9b5ee9d34e446dae945ea1f2);
+        
+    
+        var popup_85c9052467328e0caf9f4759dacbc841 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_94897fd1c7d46d8f6bd8cb075b9a430b = $(`<div id="html_94897fd1c7d46d8f6bd8cb075b9a430b" style="width: 100.0%; height: 100.0%;">1550 Dublin Ave, Manitoba, Canada</div>`)[0];
+                popup_85c9052467328e0caf9f4759dacbc841.setContent(html_94897fd1c7d46d8f6bd8cb075b9a430b);
+            
+        
+
+        marker_060e79be84268b47ecc9cb75820bd47f.bindPopup(popup_85c9052467328e0caf9f4759dacbc841)
+        ;
+
+        
+    
+    
+            var marker_bb94411f037aa1ffa4b0560d3506d32d = L.marker(
+                [49.9103768, -97.1965045],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_8d115f87a18e397ea69deba1714306bd = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eVehicle and Equipment Management Agency\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eC\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_bb94411f037aa1ffa4b0560d3506d32d.setIcon(div_icon_8d115f87a18e397ea69deba1714306bd);
+        
+    
+            var marker_4c116467ff0ccf6bf0ed84bab8cd0069 = L.marker(
+                [49.8108654, -97.0645086],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_d5278cdde6e0aa5af70125c289205ca9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4c116467ff0ccf6bf0ed84bab8cd0069.setIcon(icon_d5278cdde6e0aa5af70125c289205ca9);
+        
+    
+        var popup_8645022b05e8a46cd829c929c9d9a685 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_b8a72d00aded2429a30f294d8357298b = $(`<div id="html_b8a72d00aded2429a30f294d8357298b" style="width: 100.0%; height: 100.0%;">75 Aimes Road, Manitoba, Canada</div>`)[0];
+                popup_8645022b05e8a46cd829c929c9d9a685.setContent(html_b8a72d00aded2429a30f294d8357298b);
+            
+        
+
+        marker_4c116467ff0ccf6bf0ed84bab8cd0069.bindPopup(popup_8645022b05e8a46cd829c929c9d9a685)
+        ;
+
+        
+    
+    
+            var marker_2489d92edd9c090b62fb28e7fb2956c3 = L.marker(
+                [49.8108654, -97.0645086],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_189ac65dc65c6ec89036639c22738fe6 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eWajax (Aimes)\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eC\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_2489d92edd9c090b62fb28e7fb2956c3.setIcon(div_icon_189ac65dc65c6ec89036639c22738fe6);
+        
+    
+            var marker_d4261fc920ebbdac97138fd21bd15eef = L.marker(
+                [49.9378569, -97.2807422],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_2e81fea8859e95efac90e8c21be329e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d4261fc920ebbdac97138fd21bd15eef.setIcon(icon_2e81fea8859e95efac90e8c21be329e4);
+        
+    
+        var popup_a75329142eae5c22ae5a7d66b69e90c8 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_2b25c7a28ea99c3887e02fdc1a5eefb3 = $(`<div id="html_2b25c7a28ea99c3887e02fdc1a5eefb3" style="width: 100.0%; height: 100.0%;">7-184 Rosser Road, Manitoba, Canada</div>`)[0];
+                popup_a75329142eae5c22ae5a7d66b69e90c8.setContent(html_2b25c7a28ea99c3887e02fdc1a5eefb3);
+            
+        
+
+        marker_d4261fc920ebbdac97138fd21bd15eef.bindPopup(popup_a75329142eae5c22ae5a7d66b69e90c8)
+        ;
+
+        
+    
+    
+            var marker_1c2417210e932b53f1c449eddfb9ea56 = L.marker(
+                [49.9378569, -97.2807422],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_d0cc35cf4af1927a50a6aa5fd6e8b23d = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003e4Tracks Ltd\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_1c2417210e932b53f1c449eddfb9ea56.setIcon(div_icon_d0cc35cf4af1927a50a6aa5fd6e8b23d);
+        
+    
+            var marker_cd7a1ffc007e9eb9b5b6c126bbbbccd4 = L.marker(
+                [49.8646445, -97.0620414],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_9d1ea9d3e297744f26d1d59740ace65e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_cd7a1ffc007e9eb9b5b6c126bbbbccd4.setIcon(icon_9d1ea9d3e297744f26d1d59740ace65e);
+        
+    
+        var popup_9cf7b914f9033d3be0a8afd7ba5270be = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_97bc6375fe22adf7ef6ad01423d9351b = $(`<div id="html_97bc6375fe22adf7ef6ad01423d9351b" style="width: 100.0%; height: 100.0%;">739 Lagimodiere Blvd, Manitoba, Canada</div>`)[0];
+                popup_9cf7b914f9033d3be0a8afd7ba5270be.setContent(html_97bc6375fe22adf7ef6ad01423d9351b);
+            
+        
+
+        marker_cd7a1ffc007e9eb9b5b6c126bbbbccd4.bindPopup(popup_9cf7b914f9033d3be0a8afd7ba5270be)
+        ;
+
+        
+    
+    
+            var marker_91fcd262d9f2ea0619ffbd9b94dddec3 = L.marker(
+                [49.8646445, -97.0620414],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_51bad0a8b49ecda31a7ec898cd883dd0 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eArnold Bros, Tranport Ltd.\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_91fcd262d9f2ea0619ffbd9b94dddec3.setIcon(div_icon_51bad0a8b49ecda31a7ec898cd883dd0);
+        
+    
+            var marker_f019fde3b7c4adceee34afd874ea6bce = L.marker(
+                [49.9303292, -97.2079188],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_da86f977926daeaff69956ea9a2d06a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f019fde3b7c4adceee34afd874ea6bce.setIcon(icon_da86f977926daeaff69956ea9a2d06a4);
+        
+    
+        var popup_4962118ed7d0f27f264651420a044600 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_6ed1661f081e917a4dbf595d22677bd5 = $(`<div id="html_6ed1661f081e917a4dbf595d22677bd5" style="width: 100.0%; height: 100.0%;">33 Oak Point Hwy, Manitoba, Canada</div>`)[0];
+                popup_4962118ed7d0f27f264651420a044600.setContent(html_6ed1661f081e917a4dbf595d22677bd5);
+            
+        
+
+        marker_f019fde3b7c4adceee34afd874ea6bce.bindPopup(popup_4962118ed7d0f27f264651420a044600)
+        ;
+
+        
+    
+    
+            var marker_d91ddd122ca8723edd90c37abb38aa66 = L.marker(
+                [49.9303292, -97.2079188],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_821672b2fd8684e73fadcc103c7ea0bd = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eBeaver Truck Centre - Volvo and Hino Trucks\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_d91ddd122ca8723edd90c37abb38aa66.setIcon(div_icon_821672b2fd8684e73fadcc103c7ea0bd);
+        
+    
+            var marker_c6250cc5d1171d912acdc3921eaca4fd = L.marker(
+                [49.8944348, -97.0384235],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_3aae307a9cfe65e9147cfed5336a6a8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c6250cc5d1171d912acdc3921eaca4fd.setIcon(icon_3aae307a9cfe65e9147cfed5336a6a8a);
+        
+    
+        var popup_c17ae5d78987058a8213d7472d169a42 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_9d50a96a41cf6645dfccd0e886632c07 = $(`<div id="html_9d50a96a41cf6645dfccd0e886632c07" style="width: 100.0%; height: 100.0%;">1300 Regent Ave, Manitoba, Canada</div>`)[0];
+                popup_c17ae5d78987058a8213d7472d169a42.setContent(html_9d50a96a41cf6645dfccd0e886632c07);
+            
+        
+
+        marker_c6250cc5d1171d912acdc3921eaca4fd.bindPopup(popup_c17ae5d78987058a8213d7472d169a42)
+        ;
+
+        
+    
+    
+            var marker_264457ffe9787b5425e8293cdf1ddd96 = L.marker(
+                [49.8944348, -97.0384235],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_37df20a85ce7f1b5c4651eb5e5560fc8 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eBirchwood Ford\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_264457ffe9787b5425e8293cdf1ddd96.setIcon(div_icon_37df20a85ce7f1b5c4651eb5e5560fc8);
+        
+    
+            var marker_14cf9e24a355291750c25afd64172223 = L.marker(
+                [49.908693, -97.2105814],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_03ebec9adcc61f9f33fe363833d2e921 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_14cf9e24a355291750c25afd64172223.setIcon(icon_03ebec9adcc61f9f33fe363833d2e921);
+        
+    
+        var popup_1360274187a1b864e63d902af6ec8cf4 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_3a36657210cf103af5392cbc63615b09 = $(`<div id="html_3a36657210cf103af5392cbc63615b09" style="width: 100.0%; height: 100.0%;">1051 Sherwin Road, Manitoba, Canada</div>`)[0];
+                popup_1360274187a1b864e63d902af6ec8cf4.setContent(html_3a36657210cf103af5392cbc63615b09);
+            
+        
+
+        marker_14cf9e24a355291750c25afd64172223.bindPopup(popup_1360274187a1b864e63d902af6ec8cf4)
+        ;
+
+        
+    
+    
+            var marker_5b32c8fe25afa94de4982a893ef556db = L.marker(
+                [49.908693, -97.2105814],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_81e2ba91138a59f0753cf19eddbe9854 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eBison Transport\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_5b32c8fe25afa94de4982a893ef556db.setIcon(div_icon_81e2ba91138a59f0753cf19eddbe9854);
+        
+    
+            var marker_edbf69989dfa40ac9efffae7d659e739 = L.marker(
+                [49.9367515, -97.2246728],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_990ead3bf257c7c9b5ecfb3ca1248c98 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_edbf69989dfa40ac9efffae7d659e739.setIcon(icon_990ead3bf257c7c9b5ecfb3ca1248c98);
+        
+    
+        var popup_2dd0085ad8f9e0aaccadcd801caff1e7 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_ae75f68f1684d75dc6e8b94cca94b28a = $(`<div id="html_ae75f68f1684d75dc6e8b94cca94b28a" style="width: 100.0%; height: 100.0%;">374 Eagle Dr, Manitoba, Canada</div>`)[0];
+                popup_2dd0085ad8f9e0aaccadcd801caff1e7.setContent(html_ae75f68f1684d75dc6e8b94cca94b28a);
+            
+        
+
+        marker_edbf69989dfa40ac9efffae7d659e739.bindPopup(popup_2dd0085ad8f9e0aaccadcd801caff1e7)
+        ;
+
+        
+    
+    
+            var marker_e982255cfc58e74068eac2fc3ae0cfa1 = L.marker(
+                [49.9367515, -97.2246728],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_679d97b47e1298153be13b5bae9a867b = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eBulldog Truck Centre\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_e982255cfc58e74068eac2fc3ae0cfa1.setIcon(div_icon_679d97b47e1298153be13b5bae9a867b);
+        
+    
+            var marker_15a82c2dcd4e19b65fb4188fc6650596 = L.marker(
+                [49.8696415, -97.1393812],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_8cef7f72d878230260561dc9f34c13f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_15a82c2dcd4e19b65fb4188fc6650596.setIcon(icon_8cef7f72d878230260561dc9f34c13f2);
+        
+    
+        var popup_3ee7de9e96861251ae2be8554623926c = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_78cac1aca622e4dbba9ebf73fd442513 = $(`<div id="html_78cac1aca622e4dbba9ebf73fd442513" style="width: 100.0%; height: 100.0%;">421 Osborne St, Manitoba, Canada</div>`)[0];
+                popup_3ee7de9e96861251ae2be8554623926c.setContent(html_78cac1aca622e4dbba9ebf73fd442513);
+            
+        
+
+        marker_15a82c2dcd4e19b65fb4188fc6650596.bindPopup(popup_3ee7de9e96861251ae2be8554623926c)
+        ;
+
+        
+    
+    
+            var marker_da2f291c213c82bd79103c969acfc2c3 = L.marker(
+                [49.8696415, -97.1393812],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_28408754ff5fa0794e953f39769b4ca0 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eCity of Winnipeg Transit\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_da2f291c213c82bd79103c969acfc2c3.setIcon(div_icon_28408754ff5fa0794e953f39769b4ca0);
+        
+    
+            var marker_8b48ed70b927811e188d4830fcb99a23 = L.marker(
+                [49.9191704, -96.9717252],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_3aa787f3f7b658d0569b88e0c6024f86 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8b48ed70b927811e188d4830fcb99a23.setIcon(icon_3aa787f3f7b658d0569b88e0c6024f86);
+        
+    
+        var popup_f5d3d05dc18cf77157c052f45f466925 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_8f83f2cdc83cb19c5847f0cdea75d2ff = $(`<div id="html_8f83f2cdc83cb19c5847f0cdea75d2ff" style="width: 100.0%; height: 100.0%;">245 Transport Rd, Manitoba, Canada</div>`)[0];
+                popup_f5d3d05dc18cf77157c052f45f466925.setContent(html_8f83f2cdc83cb19c5847f0cdea75d2ff);
+            
+        
+
+        marker_8b48ed70b927811e188d4830fcb99a23.bindPopup(popup_f5d3d05dc18cf77157c052f45f466925)
+        ;
+
+        
+    
+    
+            var marker_e817e31dcaa1a3bc8d76655300ec75b6 = L.marker(
+                [49.9191704, -96.9717252],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_663735baf213c3a0f64458d76459a6f1 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eCommercial Truck Equipment Co.\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_e817e31dcaa1a3bc8d76655300ec75b6.setIcon(div_icon_663735baf213c3a0f64458d76459a6f1);
+        
+    
+            var marker_114179eb1d84a03f576dc345a0047b5b = L.marker(
+                [49.9375695, -97.226669],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_4ffe32bb31b943e8c629bd453e267326 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_114179eb1d84a03f576dc345a0047b5b.setIcon(icon_4ffe32bb31b943e8c629bd453e267326);
+        
+    
+        var popup_e105af36340be7012755698d1f460a3d = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_df88e5a2ac48d095ce4280b8876421f4 = $(`<div id="html_df88e5a2ac48d095ce4280b8876421f4" style="width: 100.0%; height: 100.0%;">440 Oak Point Hwy, Manitoba, Canada</div>`)[0];
+                popup_e105af36340be7012755698d1f460a3d.setContent(html_df88e5a2ac48d095ce4280b8876421f4);
+            
+        
+
+        marker_114179eb1d84a03f576dc345a0047b5b.bindPopup(popup_e105af36340be7012755698d1f460a3d)
+        ;
+
+        
+    
+    
+            var marker_8e53c810d788404d0d61c9fb77583aca = L.marker(
+                [49.9375695, -97.226669],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_c2c469df371725446b7867ecd4ad3889 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eConnexion Truck Centre Ltd. oa Western Star Truck\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_8e53c810d788404d0d61c9fb77583aca.setIcon(div_icon_c2c469df371725446b7867ecd4ad3889);
+        
+    
+            var marker_6ede624a39537881dda32025dd99a82e = L.marker(
+                [49.9402367, -97.227811],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_476d5a37aa2147e6f543f1373604f3fc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6ede624a39537881dda32025dd99a82e.setIcon(icon_476d5a37aa2147e6f543f1373604f3fc);
+        
+    
+        var popup_582e683127bafa9c7e8af3688b9d0bcb = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_cb406ab1db1dcd94832755f9b79ba0eb = $(`<div id="html_cb406ab1db1dcd94832755f9b79ba0eb" style="width: 100.0%; height: 100.0%;">489 Oak Point Hwy, Manitoba, Canada</div>`)[0];
+                popup_582e683127bafa9c7e8af3688b9d0bcb.setContent(html_cb406ab1db1dcd94832755f9b79ba0eb);
+            
+        
+
+        marker_6ede624a39537881dda32025dd99a82e.bindPopup(popup_582e683127bafa9c7e8af3688b9d0bcb)
+        ;
+
+        
+    
+    
+            var marker_da4f77633f216bc7aa6767d641a8764e = L.marker(
+                [49.9402367, -97.227811],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_c50c70e3255ae00b5de2c7880ff9b3fe = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eCummins Sales and Service\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_da4f77633f216bc7aa6767d641a8764e.setIcon(div_icon_c50c70e3255ae00b5de2c7880ff9b3fe);
+        
+    
+            var marker_5fe88a032fb58f23802bd9364ecb6b4c = L.marker(
+                [49.8383747, -97.1770809],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_92fc13317fa5ba51bfad023f12fcbfac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5fe88a032fb58f23802bd9364ecb6b4c.setIcon(icon_92fc13317fa5ba51bfad023f12fcbfac);
+        
+    
+        var popup_7c0fb487dfa2a4c0b1ded0b59f4d1997 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_fbdfdbafbc6bd1d62b3de655f3e25f10 = $(`<div id="html_fbdfdbafbc6bd1d62b3de655f3e25f10" style="width: 100.0%; height: 100.0%;">1664 Seel Ave, Manitoba, Canada</div>`)[0];
+                popup_7c0fb487dfa2a4c0b1ded0b59f4d1997.setContent(html_fbdfdbafbc6bd1d62b3de655f3e25f10);
+            
+        
+
+        marker_5fe88a032fb58f23802bd9364ecb6b4c.bindPopup(popup_7c0fb487dfa2a4c0b1ded0b59f4d1997)
+        ;
+
+        
+    
+    
+            var marker_3254ea8682801c0eaef9e84eea267f2f = L.marker(
+                [49.8383747, -97.1770809],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_5658b26065cf7276c699a8f7dc42a5e1 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eCWS Logistics Ltd.\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_3254ea8682801c0eaef9e84eea267f2f.setIcon(div_icon_5658b26065cf7276c699a8f7dc42a5e1);
+        
+    
+            var marker_3d859ac09a974b998f9a88e9b937eab9 = L.marker(
+                [49.7906124, -97.1580482],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_b93c8aeff424dc99180261b401dd9928 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3d859ac09a974b998f9a88e9b937eab9.setIcon(icon_b93c8aeff424dc99180261b401dd9928);
+        
+    
+        var popup_2c0ef098679245da8bc90c7f3cce0bb8 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_e8a790a8ef0ba40d19648c70d2013d47 = $(`<div id="html_e8a790a8ef0ba40d19648c70d2013d47" style="width: 100.0%; height: 100.0%;">1447 MB-75, Manitoba, Canada</div>`)[0];
+                popup_2c0ef098679245da8bc90c7f3cce0bb8.setContent(html_e8a790a8ef0ba40d19648c70d2013d47);
+            
+        
+
+        marker_3d859ac09a974b998f9a88e9b937eab9.bindPopup(popup_2c0ef098679245da8bc90c7f3cce0bb8)
+        ;
+
+        
+    
+    
+            var marker_0871424ea17bc0630f3ea9d420e3f5d8 = L.marker(
+                [49.7906124, -97.1580482],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_4f82a74ca10d5fed926e80b5b8d44275 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eDeva Jatt Transport Ltd.\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_0871424ea17bc0630f3ea9d420e3f5d8.setIcon(div_icon_4f82a74ca10d5fed926e80b5b8d44275);
+        
+    
+            var marker_61a236a102b1114c1d2f7837583633ce = L.marker(
+                [49.8078244, -97.2242312],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_8b23bb9ee89216a58276735e3034bd27 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_61a236a102b1114c1d2f7837583633ce.setIcon(icon_8b23bb9ee89216a58276735e3034bd27);
+        
+    
+        var popup_df836925210fb6abf3c3db8a4143f97d = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_86a10cd6d2b5800eebdffdbb7d276fd1 = $(`<div id="html_86a10cd6d2b5800eebdffdbb7d276fd1" style="width: 100.0%; height: 100.0%;">132 Samborski Dr, Manitoba, Canada</div>`)[0];
+                popup_df836925210fb6abf3c3db8a4143f97d.setContent(html_86a10cd6d2b5800eebdffdbb7d276fd1);
+            
+        
+
+        marker_61a236a102b1114c1d2f7837583633ce.bindPopup(popup_df836925210fb6abf3c3db8a4143f97d)
+        ;
+
+        
+    
+    
+            var marker_876aa9e0d325ef7e0463cedc1faabe49 = L.marker(
+                [49.8078244, -97.2242312],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_9bf51a88fb40b10c03472adf70a9c1c3 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eExpertz Fleet Service Center Ltd. - agreement subm\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_876aa9e0d325ef7e0463cedc1faabe49.setIcon(div_icon_9bf51a88fb40b10c03472adf70a9c1c3);
+        
+    
+            var marker_df89941f6294bee4702822dde64a8925 = L.marker(
+                [49.931727, -97.2157643],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_bc9ab2128da37a1adfa4d1c992293744 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_df89941f6294bee4702822dde64a8925.setIcon(icon_bc9ab2128da37a1adfa4d1c992293744);
+        
+    
+        var popup_06bbaaef5a156df64e4d00cf9b66a57d = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_1300078343c0d294e9152816a216e5c4 = $(`<div id="html_1300078343c0d294e9152816a216e5c4" style="width: 100.0%; height: 100.0%;">540 Oak Point Hwy, Manitoba, Canada</div>`)[0];
+                popup_06bbaaef5a156df64e4d00cf9b66a57d.setContent(html_1300078343c0d294e9152816a216e5c4);
+            
+        
+
+        marker_df89941f6294bee4702822dde64a8925.bindPopup(popup_06bbaaef5a156df64e4d00cf9b66a57d)
+        ;
+
+        
+    
+    
+            var marker_cec2bb41eb97f141d271988c678eb298 = L.marker(
+                [49.931727, -97.2157643],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_7095317a529d96b6ace8c8ca4c0a7a02 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eFleet Brake (Parts For Trucks) (for Trucks)\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_cec2bb41eb97f141d271988c678eb298.setIcon(div_icon_7095317a529d96b6ace8c8ca4c0a7a02);
+        
+    
+            var marker_ad314c0e25e185b765666aabb8c28538 = L.marker(
+                [49.920138, -97.0506522],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_847f7ef8aa94f812380fbd1de036cf7a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ad314c0e25e185b765666aabb8c28538.setIcon(icon_847f7ef8aa94f812380fbd1de036cf7a);
+        
+    
+        var popup_2c02a018923b3ed4d808697b5703afe5 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_b8184390a5cefc0d7e6c3e6459745fa4 = $(`<div id="html_b8184390a5cefc0d7e6c3e6459745fa4" style="width: 100.0%; height: 100.0%;">183 Eagle Dr, Manitoba, Canada</div>`)[0];
+                popup_2c02a018923b3ed4d808697b5703afe5.setContent(html_b8184390a5cefc0d7e6c3e6459745fa4);
+            
+        
+
+        marker_ad314c0e25e185b765666aabb8c28538.bindPopup(popup_2c02a018923b3ed4d808697b5703afe5)
+        ;
+
+        
+    
+    
+            var marker_f70a2106506a3f87bbc11367cae441b0 = L.marker(
+                [49.920138, -97.0506522],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_0bc562c669b760c58a6aec340f48b154 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eFLT Repair Services Ltd\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_f70a2106506a3f87bbc11367cae441b0.setIcon(div_icon_0bc562c669b760c58a6aec340f48b154);
+        
+    
+            var marker_3797f9912a43af5bba6ed3c84d171f3e = L.marker(
+                [49.931727, -97.2157643],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_d0d5cb5fb2b37b7524c49127a815fa0a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3797f9912a43af5bba6ed3c84d171f3e.setIcon(icon_d0d5cb5fb2b37b7524c49127a815fa0a);
+        
+    
+        var popup_04be2f576a76ee0140a18c06eb965b19 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_14bdcff498094bd18f9605af838d4428 = $(`<div id="html_14bdcff498094bd18f9605af838d4428" style="width: 100.0%; height: 100.0%;">1650 Oak Point Hwy, Manitoba, Canada</div>`)[0];
+                popup_04be2f576a76ee0140a18c06eb965b19.setContent(html_14bdcff498094bd18f9605af838d4428);
+            
+        
+
+        marker_3797f9912a43af5bba6ed3c84d171f3e.bindPopup(popup_04be2f576a76ee0140a18c06eb965b19)
+        ;
+
+        
+    
+    
+            var marker_c30328035a45b8d9edf852ebeffb31bd = L.marker(
+                [49.931727, -97.2157643],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_c15fc2be3c447df2587eb6e0768996c6 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eParts for Trucks (Trailer)\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_c30328035a45b8d9edf852ebeffb31bd.setIcon(div_icon_c15fc2be3c447df2587eb6e0768996c6);
+        
+    
+            var marker_8a9215d2964770e77a608affa7cbc4f1 = L.marker(
+                [49.9468333, -97.2218145],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_cb671c10bfda5139739f8da4debb1a8f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8a9215d2964770e77a608affa7cbc4f1.setIcon(icon_cb671c10bfda5139739f8da4debb1a8f);
+        
+    
+        var popup_5d050aec336a620bef7161c02ed53d85 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_db4b9f65923b56d8b392c044f28d8db3 = $(`<div id="html_db4b9f65923b56d8b392c044f28d8db3" style="width: 100.0%; height: 100.0%;">2525 Inkster Blvd, Manitoba, Canada</div>`)[0];
+                popup_5d050aec336a620bef7161c02ed53d85.setContent(html_db4b9f65923b56d8b392c044f28d8db3);
+            
+        
+
+        marker_8a9215d2964770e77a608affa7cbc4f1.bindPopup(popup_5d050aec336a620bef7161c02ed53d85)
+        ;
+
+        
+    
+    
+            var marker_d4f531317b185741dd2ed6a086cef13f = L.marker(
+                [49.9468333, -97.2218145],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_2550630a4900692f6a23f16dfbdc4997 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eFort Garry Industries Ltd.\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_d4f531317b185741dd2ed6a086cef13f.setIcon(div_icon_2550630a4900692f6a23f16dfbdc4997);
+        
+    
+            var marker_188d7a37c2e9eb97091517f189a47a7e = L.marker(
+                [49.9338635, -97.2226461],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_7eb031bd9a2d8ea633161c1c826e6192 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_188d7a37c2e9eb97091517f189a47a7e.setIcon(icon_7eb031bd9a2d8ea633161c1c826e6192);
+        
+    
+        var popup_4b7068f6f24924947df5cb6e9193120c = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_a1b8549840365877bfbe8fc0a9527c2f = $(`<div id="html_a1b8549840365877bfbe8fc0a9527c2f" style="width: 100.0%; height: 100.0%;">60 Eagle Dr, Manitoba, Canada</div>`)[0];
+                popup_4b7068f6f24924947df5cb6e9193120c.setContent(html_a1b8549840365877bfbe8fc0a9527c2f);
+            
+        
+
+        marker_188d7a37c2e9eb97091517f189a47a7e.bindPopup(popup_4b7068f6f24924947df5cb6e9193120c)
+        ;
+
+        
+    
+    
+            var marker_3cac0050713daf10e28581029234f64f = L.marker(
+                [49.9338635, -97.2226461],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_7ba3fcb8ca4dde63909d4a02bc1a6cdb = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eGardewine North\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_3cac0050713daf10e28581029234f64f.setIcon(div_icon_7ba3fcb8ca4dde63909d4a02bc1a6cdb);
+        
+    
+            var marker_69d0427f0c96c4a8c0a07007e76287c3 = L.marker(
+                [49.9362794, -97.2187878],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_3b2c1706464f437ba73bf9d31ff4e453 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_69d0427f0c96c4a8c0a07007e76287c3.setIcon(icon_3b2c1706464f437ba73bf9d31ff4e453);
+        
+    
+        var popup_63476ede946bcb6b97fe2f5380853be6 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_2c186848d851943ac0174cfa3cffd029 = $(`<div id="html_2c186848d851943ac0174cfa3cffd029" style="width: 100.0%; height: 100.0%;">323 Oak Point Hwy, Manitoba, Canada</div>`)[0];
+                popup_63476ede946bcb6b97fe2f5380853be6.setContent(html_2c186848d851943ac0174cfa3cffd029);
+            
+        
+
+        marker_69d0427f0c96c4a8c0a07007e76287c3.bindPopup(popup_63476ede946bcb6b97fe2f5380853be6)
+        ;
+
+        
+    
+    
+            var marker_1cc6499202691a0a973838537a4d4de3 = L.marker(
+                [49.9362794, -97.2187878],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_3663611b4ad744dd844b8e24f213c83d = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eGenuine Truck Service\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_1cc6499202691a0a973838537a4d4de3.setIcon(div_icon_3663611b4ad744dd844b8e24f213c83d);
+        
+    
+            var marker_1cdd58faeb5d693695da9105a7cdab13 = L.marker(
+                [50.0527402, -97.051316],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_d4519a38632f9994b1a4de32de8c5d2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1cdd58faeb5d693695da9105a7cdab13.setIcon(icon_d4519a38632f9994b1a4de32de8c5d2c);
+        
+    
+        var popup_af23dbc531d94146aca86d3b5cec69f1 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_07e6779c1e2721d5bfe976c3a8ba4404 = $(`<div id="html_07e6779c1e2721d5bfe976c3a8ba4404" style="width: 100.0%; height: 100.0%;">16 Prairie Place, Manitoba, Canada</div>`)[0];
+                popup_af23dbc531d94146aca86d3b5cec69f1.setContent(html_07e6779c1e2721d5bfe976c3a8ba4404);
+            
+        
+
+        marker_1cdd58faeb5d693695da9105a7cdab13.bindPopup(popup_af23dbc531d94146aca86d3b5cec69f1)
+        ;
+
+        
+    
+    
+            var marker_6fdf9d8e9b5c267580a6160e90cac022 = L.marker(
+                [50.0527402, -97.051316],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_22b17bbe5cba5e37b6d815f0c6b74543 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eGPEX Transport\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_6fdf9d8e9b5c267580a6160e90cac022.setIcon(div_icon_22b17bbe5cba5e37b6d815f0c6b74543);
+        
+    
+            var marker_4875cf6201ca5843dc0105b3ef6803f4 = L.marker(
+                [49.9566306, -97.2377297],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_6287c77593c9218b2e053e668d94d3ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4875cf6201ca5843dc0105b3ef6803f4.setIcon(icon_6287c77593c9218b2e053e668d94d3ae);
+        
+    
+        var popup_391736c35769ed6be109aaa02fecdfd9 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_0353fdd51f6a48bd28b1a22ea3eb2060 = $(`<div id="html_0353fdd51f6a48bd28b1a22ea3eb2060" style="width: 100.0%; height: 100.0%;">136 Wheatfield Rd, Manitoba, Canada</div>`)[0];
+                popup_391736c35769ed6be109aaa02fecdfd9.setContent(html_0353fdd51f6a48bd28b1a22ea3eb2060);
+            
+        
+
+        marker_4875cf6201ca5843dc0105b3ef6803f4.bindPopup(popup_391736c35769ed6be109aaa02fecdfd9)
+        ;
+
+        
+    
+    
+            var marker_be18ed7ee37576cc745f89c7e5b9f82c = L.marker(
+                [49.9566306, -97.2377297],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_7e1b51fd0662e95ac52d56a4128938b1 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eHighway Motor Freight Ltd.\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_be18ed7ee37576cc745f89c7e5b9f82c.setIcon(div_icon_7e1b51fd0662e95ac52d56a4128938b1);
+        
+    
+            var marker_4efa872c476bfa28013c59d55df4d361 = L.marker(
+                [49.9369431, -97.2207554],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_07637b0ec45452fb936fb9aa4b30b7bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4efa872c476bfa28013c59d55df4d361.setIcon(icon_07637b0ec45452fb936fb9aa4b30b7bd);
+        
+    
+        var popup_93d78ceb75ed4c5d1d6cc0e7b764c8e4 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_863dfd857381d4354703f8b6dc7017ea = $(`<div id="html_863dfd857381d4354703f8b6dc7017ea" style="width: 100.0%; height: 100.0%;">357 Oak Point Hwy, Manitoba, Canada</div>`)[0];
+                popup_93d78ceb75ed4c5d1d6cc0e7b764c8e4.setContent(html_863dfd857381d4354703f8b6dc7017ea);
+            
+        
+
+        marker_4efa872c476bfa28013c59d55df4d361.bindPopup(popup_93d78ceb75ed4c5d1d6cc0e7b764c8e4)
+        ;
+
+        
+    
+    
+            var marker_0063911993f4b54837c93c4a36d2a89c = L.marker(
+                [49.9369431, -97.2207554],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_e960bb2f521a110ca051aa3a5ae2e245 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eInland Truck and Equipment (Kenworth)\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_0063911993f4b54837c93c4a36d2a89c.setIcon(div_icon_e960bb2f521a110ca051aa3a5ae2e245);
+        
+    
+            var marker_83373e043ecef95d8e7fb59092b68cf2 = L.marker(
+                [49.9260884, -97.2143151],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_6055b8709506d3f48049ba4cd1ec8cff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_83373e043ecef95d8e7fb59092b68cf2.setIcon(icon_6055b8709506d3f48049ba4cd1ec8cff);
+        
+    
+        var popup_dd3a6b0de9fb5e27d278613d078252f8 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_28552fe515ee572030157413dbf7e1a2 = $(`<div id="html_28552fe515ee572030157413dbf7e1a2" style="width: 100.0%; height: 100.0%;">2115 Logan Ave, Manitoba, Canada</div>`)[0];
+                popup_dd3a6b0de9fb5e27d278613d078252f8.setContent(html_28552fe515ee572030157413dbf7e1a2);
+            
+        
+
+        marker_83373e043ecef95d8e7fb59092b68cf2.bindPopup(popup_dd3a6b0de9fb5e27d278613d078252f8)
+        ;
+
+        
+    
+    
+            var marker_1c6177f07b54d9e3a405a16ace833bee = L.marker(
+                [49.9260884, -97.2143151],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_88e8b86e38fe89445cb3d4d773d06b01 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eKeen Transport \u0026 Logistics Inc.\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_1c6177f07b54d9e3a405a16ace833bee.setIcon(div_icon_88e8b86e38fe89445cb3d4d773d06b01);
+        
+    
+            var marker_a367b11d4bf7e1acf3b99231d1b862ad = L.marker(
+                [49.9519748, -97.2267513],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_fa809e64e5fa86e13627e3795bc81d03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a367b11d4bf7e1acf3b99231d1b862ad.setIcon(icon_fa809e64e5fa86e13627e3795bc81d03);
+        
+    
+        var popup_d24bcef75487b6ce4c6d2a19412a0dbf = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_de81b3c603a97bb651a6954a312594ee = $(`<div id="html_de81b3c603a97bb651a6954a312594ee" style="width: 100.0%; height: 100.0%;">1991 Brookside, Manitoba, Canada</div>`)[0];
+                popup_d24bcef75487b6ce4c6d2a19412a0dbf.setContent(html_de81b3c603a97bb651a6954a312594ee);
+            
+        
+
+        marker_a367b11d4bf7e1acf3b99231d1b862ad.bindPopup(popup_d24bcef75487b6ce4c6d2a19412a0dbf)
+        ;
+
+        
+    
+    
+            var marker_6da5b1a3b6d88c915cb7a7084e7820b3 = L.marker(
+                [49.9519748, -97.2267513],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_645e9f6894da80b716feeac79338b841 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eKindersley Transport\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_6da5b1a3b6d88c915cb7a7084e7820b3.setIcon(div_icon_645e9f6894da80b716feeac79338b841);
+        
+    
+            var marker_6cda1de530abd40d94c17b67918c86c8 = L.marker(
+                [49.8213573, -97.2007752],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_de2ccc55dacf37e444a447bb7fe7dc26 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6cda1de530abd40d94c17b67918c86c8.setIcon(icon_de2ccc55dacf37e444a447bb7fe7dc26);
+        
+    
+        var popup_028de4b61b9cb704f98cc34df6be1910 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_39b65a982ce280b5c2b9e6d1ce65acce = $(`<div id="html_39b65a982ce280b5c2b9e6d1ce65acce" style="width: 100.0%; height: 100.0%;">2800 McGillivray Blvd, Manitoba, Canada</div>`)[0];
+                popup_028de4b61b9cb704f98cc34df6be1910.setContent(html_39b65a982ce280b5c2b9e6d1ce65acce);
+            
+        
+
+        marker_6cda1de530abd40d94c17b67918c86c8.bindPopup(popup_028de4b61b9cb704f98cc34df6be1910)
+        ;
+
+        
+    
+    
+            var marker_92469a5491fc0315da840ad3c5c294d9 = L.marker(
+                [49.8213573, -97.2007752],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_d6c58c80cac5d565e1a3302ed1130eba = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eKleysen Group Ltd.\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_92469a5491fc0315da840ad3c5c294d9.setIcon(div_icon_d6c58c80cac5d565e1a3302ed1130eba);
+        
+    
+            var marker_38fff8ac8580dce06cc8063ad69ad534 = L.marker(
+                [49.9205046, -97.0507701],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_df3f87eb5be6021a98816576c7eb863b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_38fff8ac8580dce06cc8063ad69ad534.setIcon(icon_df3f87eb5be6021a98816576c7eb863b);
+        
+    
+        var popup_2a81977f4acbd642ebb46a76836685ff = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_0427ef9aba36b62a0575a3f474c68157 = $(`<div id="html_0427ef9aba36b62a0575a3f474c68157" style="width: 100.0%; height: 100.0%;">195 Eagle Dr, Manitoba, Canada</div>`)[0];
+                popup_2a81977f4acbd642ebb46a76836685ff.setContent(html_0427ef9aba36b62a0575a3f474c68157);
+            
+        
+
+        marker_38fff8ac8580dce06cc8063ad69ad534.bindPopup(popup_2a81977f4acbd642ebb46a76836685ff)
+        ;
+
+        
+    
+    
+            var marker_5906579b7e811ffbda3e386521cab41a = L.marker(
+                [49.9205046, -97.0507701],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_620349f5011e7594e432d2955e5b3fc9 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eMastan Truck Repair Ltd.\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_5906579b7e811ffbda3e386521cab41a.setIcon(div_icon_620349f5011e7594e432d2955e5b3fc9);
+        
+    
+            var marker_0378cac0ea44874071bb58ffe3bc3243 = L.marker(
+                [49.9579988, -97.22973],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_74948af29cc28f7fc0fdb65d4534e5b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0378cac0ea44874071bb58ffe3bc3243.setIcon(icon_74948af29cc28f7fc0fdb65d4534e5b6);
+        
+    
+        var popup_ba324e8093aac44303076c75ba9d775b = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_f72f962f835d7a445b4b0bacafbb1cdb = $(`<div id="html_f72f962f835d7a445b4b0bacafbb1cdb" style="width: 100.0%; height: 100.0%;">1860 Brookside Blvd, Manitoba, Canada</div>`)[0];
+                popup_ba324e8093aac44303076c75ba9d775b.setContent(html_f72f962f835d7a445b4b0bacafbb1cdb);
+            
+        
+
+        marker_0378cac0ea44874071bb58ffe3bc3243.bindPopup(popup_ba324e8093aac44303076c75ba9d775b)
+        ;
+
+        
+    
+    
+            var marker_8d0f15e0fe34e7f33627a6aaeaf5857b = L.marker(
+                [49.9579988, -97.22973],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_cc687591489279043bce93ed1db8256d = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eDLH Group - Maxim Truck \u0026 Trailer (Brookside)\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_8d0f15e0fe34e7f33627a6aaeaf5857b.setIcon(div_icon_cc687591489279043bce93ed1db8256d);
+        
+    
+            var marker_0ba52fac833b7b7ce818ea26022ee082 = L.marker(
+                [49.8413325, -97.2050648],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_e0ef0cff62e701a3d51f8d6dfbe4823f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0ba52fac833b7b7ce818ea26022ee082.setIcon(icon_e0ef0cff62e701a3d51f8d6dfbe4823f);
+        
+    
+        var popup_b4644fba87d55d4a65276be58ed26f4c = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_7042d1c86f5384d7d298e0a78b872e00 = $(`<div id="html_7042d1c86f5384d7d298e0a78b872e00" style="width: 100.0%; height: 100.0%;">45 Lowson Cres, Manitoba, Canada</div>`)[0];
+                popup_b4644fba87d55d4a65276be58ed26f4c.setContent(html_7042d1c86f5384d7d298e0a78b872e00);
+            
+        
+
+        marker_0ba52fac833b7b7ce818ea26022ee082.bindPopup(popup_b4644fba87d55d4a65276be58ed26f4c)
+        ;
+
+        
+    
+    
+            var marker_e806709e3de2f98f99779b047f61ec84 = L.marker(
+                [49.8413325, -97.2050648],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_8189fd5f934a0c8b64d9fdd12fa78cab = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eDLH Group - Maxim Truck \u0026 Trailer (Lowson)\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_e806709e3de2f98f99779b047f61ec84.setIcon(div_icon_8189fd5f934a0c8b64d9fdd12fa78cab);
+        
+    
+            var marker_2878f1c6bb4e1b7a31108e20a40f65cc = L.marker(
+                [49.9579988, -97.22973],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_1a2a9857e26ccfe6b13bcd16ecf818a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2878f1c6bb4e1b7a31108e20a40f65cc.setIcon(icon_1a2a9857e26ccfe6b13bcd16ecf818a1);
+        
+    
+        var popup_88936399c89079d4d89222766081489b = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_200341742bc9321ef6c5d77d36b8f482 = $(`<div id="html_200341742bc9321ef6c5d77d36b8f482" style="width: 100.0%; height: 100.0%;">1860 Brookside Blvd, Manitoba, Canada</div>`)[0];
+                popup_88936399c89079d4d89222766081489b.setContent(html_200341742bc9321ef6c5d77d36b8f482);
+            
+        
+
+        marker_2878f1c6bb4e1b7a31108e20a40f65cc.bindPopup(popup_88936399c89079d4d89222766081489b)
+        ;
+
+        
+    
+    
+            var marker_69cc7e38b354727f22bdbdabcfe57967 = L.marker(
+                [49.9579988, -97.22973],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_9f54355f66547fc59fd2d74b523f2d3e = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eDLH Group - Maxim Trailer (Brookside)\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_69cc7e38b354727f22bdbdabcfe57967.setIcon(div_icon_9f54355f66547fc59fd2d74b523f2d3e);
+        
+    
+            var marker_762a25625e8a8b9ffc3cdfe2eccb2f13 = L.marker(
+                [49.9367515, -97.2246728],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_1587b1e10f7223f0935efe8d61f22dba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_762a25625e8a8b9ffc3cdfe2eccb2f13.setIcon(icon_1587b1e10f7223f0935efe8d61f22dba);
+        
+    
+        var popup_b90912cd41b211c45096143737997319 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_c46a6017e52eddf85a19aa7e1e80bd01 = $(`<div id="html_c46a6017e52eddf85a19aa7e1e80bd01" style="width: 100.0%; height: 100.0%;">310 Eagle Dr, Manitoba, Canada</div>`)[0];
+                popup_b90912cd41b211c45096143737997319.setContent(html_c46a6017e52eddf85a19aa7e1e80bd01);
+            
+        
+
+        marker_762a25625e8a8b9ffc3cdfe2eccb2f13.bindPopup(popup_b90912cd41b211c45096143737997319)
+        ;
+
+        
+    
+    
+            var marker_df738741b7438122bc2a9524f5b52951 = L.marker(
+                [49.9367515, -97.2246728],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_7d44a8dc4de3691140dc540aee3b2f15 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eMehtoj Group Ltd.\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_df738741b7438122bc2a9524f5b52951.setIcon(div_icon_7d44a8dc4de3691140dc540aee3b2f15);
+        
+    
+            var marker_f840e49c5dd9c0b4200ba1099aac6bc2 = L.marker(
+                [49.783162, -97.3321841],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_9b76aeb40e085d592d88c922f04f2486 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f840e49c5dd9c0b4200ba1099aac6bc2.setIcon(icon_9b76aeb40e085d592d88c922f04f2486);
+        
+    
+        var popup_9444c1d10e253f264d052a3966398e0f = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_418ad6ac8d25b9938ae30e1475ce7df1 = $(`<div id="html_418ad6ac8d25b9938ae30e1475ce7df1" style="width: 100.0%; height: 100.0%;">170 Agri Park Rd, Manitoba, Canada</div>`)[0];
+                popup_9444c1d10e253f264d052a3966398e0f.setContent(html_418ad6ac8d25b9938ae30e1475ce7df1);
+            
+        
+
+        marker_f840e49c5dd9c0b4200ba1099aac6bc2.bindPopup(popup_9444c1d10e253f264d052a3966398e0f)
+        ;
+
+        
+    
+    
+            var marker_c21f59764f6d3033a9500ecbf739faf7 = L.marker(
+                [49.783162, -97.3321841],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_4acb6a61fdf898b5948374fbfecdb0db = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eNew Hope Transport Ltd.\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_c21f59764f6d3033a9500ecbf739faf7.setIcon(div_icon_4acb6a61fdf898b5948374fbfecdb0db);
+        
+    
+            var marker_278276a4a306802ade90bef90182256d = L.marker(
+                [49.931727, -97.2157643],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_c3859c873df9384099ce6e64381e48d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_278276a4a306802ade90bef90182256d.setIcon(icon_c3859c873df9384099ce6e64381e48d4);
+        
+    
+        var popup_65be3e14fbad430905b81467f815f6f0 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_cc612a87ea5020e66b4993180a463204 = $(`<div id="html_cc612a87ea5020e66b4993180a463204" style="width: 100.0%; height: 100.0%;">272 Oak Point Hwy, Manitoba, Canada</div>`)[0];
+                popup_65be3e14fbad430905b81467f815f6f0.setContent(html_cc612a87ea5020e66b4993180a463204);
+            
+        
+
+        marker_278276a4a306802ade90bef90182256d.bindPopup(popup_65be3e14fbad430905b81467f815f6f0)
+        ;
+
+        
+    
+    
+            var marker_993f21d2c7fe92aaec51bf23f88f9651 = L.marker(
+                [49.931727, -97.2157643],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_058b74a54dd05ddf62d7f7edc719f3c7 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003ePaul\u0027s Hauling Ltd.\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_993f21d2c7fe92aaec51bf23f88f9651.setIcon(div_icon_058b74a54dd05ddf62d7f7edc719f3c7);
+        
+    
+            var marker_160e1f6d7597e32472b1ad034f884420 = L.marker(
+                [50.0752255, -97.2329227],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_c0ace8aad3d749c8620fc3317aa170cf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_160e1f6d7597e32472b1ad034f884420.setIcon(icon_c0ace8aad3d749c8620fc3317aa170cf);
+        
+    
+        var popup_42782a4dd0fea3a41da04a0490bf433c = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_3d3629a6674e6492dadf5b2157085ce0 = $(`<div id="html_3d3629a6674e6492dadf5b2157085ce0" style="width: 100.0%; height: 100.0%;">29 Mountain View Road, Manitoba, Canada</div>`)[0];
+                popup_42782a4dd0fea3a41da04a0490bf433c.setContent(html_3d3629a6674e6492dadf5b2157085ce0);
+            
+        
+
+        marker_160e1f6d7597e32472b1ad034f884420.bindPopup(popup_42782a4dd0fea3a41da04a0490bf433c)
+        ;
+
+        
+    
+    
+            var marker_b2d171e4fc0b5133449e68ceebe5f8b6 = L.marker(
+                [50.0752255, -97.2329227],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_1fb1bb9408464739b6d796516ed07a4f = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003ePenner Oil\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_b2d171e4fc0b5133449e68ceebe5f8b6.setIcon(div_icon_1fb1bb9408464739b6d796516ed07a4f);
+        
+    
+            var marker_368198481a24a0f9458f169637439900 = L.marker(
+                [49.947168, -97.2279904],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_0fe4e9e74d151d3c2a2dc5392d4df8cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_368198481a24a0f9458f169637439900.setIcon(icon_0fe4e9e74d151d3c2a2dc5392d4df8cb);
+        
+    
+        var popup_6dc47fc28a4f29afb5aeaf2a0c8208b4 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_c63cda3721d6c23995fdb2c673d78209 = $(`<div id="html_c63cda3721d6c23995fdb2c673d78209" style="width: 100.0%; height: 100.0%;">1895 Brookside Blvd, Manitoba, Canada</div>`)[0];
+                popup_6dc47fc28a4f29afb5aeaf2a0c8208b4.setContent(html_c63cda3721d6c23995fdb2c673d78209);
+            
+        
+
+        marker_368198481a24a0f9458f169637439900.bindPopup(popup_6dc47fc28a4f29afb5aeaf2a0c8208b4)
+        ;
+
+        
+    
+    
+            var marker_bae1f1663e99af4ee857918f157a4525 = L.marker(
+                [49.947168, -97.2279904],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_2fba2a86d8453c55c6ca4c4d44376aca = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003ePeterbilt Manitoba\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_bae1f1663e99af4ee857918f157a4525.setIcon(div_icon_2fba2a86d8453c55c6ca4c4d44376aca);
+        
+    
+            var marker_071ededd49fa2b422baff341109b62dd = L.marker(
+                [49.9185938, -96.9856081],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_b5ba4e4d40eb181f32d9d64d27600cba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_071ededd49fa2b422baff341109b62dd.setIcon(icon_b5ba4e4d40eb181f32d9d64d27600cba);
+        
+    
+        var popup_c8c00d8d72ce39e5462612649e9fec3e = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_700a9a21c33ab8a2249aafdf6f9a3509 = $(`<div id="html_700a9a21c33ab8a2249aafdf6f9a3509" style="width: 100.0%; height: 100.0%;">76 Don Valley Pkwy, Manitoba, Canada</div>`)[0];
+                popup_c8c00d8d72ce39e5462612649e9fec3e.setContent(html_700a9a21c33ab8a2249aafdf6f9a3509);
+            
+        
+
+        marker_071ededd49fa2b422baff341109b62dd.bindPopup(popup_c8c00d8d72ce39e5462612649e9fec3e)
+        ;
+
+        
+    
+    
+            var marker_64d9db466be79f768dfb5a96a765acae = L.marker(
+                [49.9185938, -96.9856081],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_8423dd9a60937d8ffbe81c4e5510b1d1 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003ePeterbilt Manitoba (Springfield)\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_64d9db466be79f768dfb5a96a765acae.setIcon(div_icon_8423dd9a60937d8ffbe81c4e5510b1d1);
+        
+    
+            var marker_7f719190a8b76102e693d1d5559054e3 = L.marker(
+                [49.947168, -97.2279904],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_2bc63aa68faa475292cc7a695f62757b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7f719190a8b76102e693d1d5559054e3.setIcon(icon_2bc63aa68faa475292cc7a695f62757b);
+        
+    
+        var popup_b992a46e3aca43af34324c7d83122b1a = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_54ea6f4ec91b53934fb0511896a94bfe = $(`<div id="html_54ea6f4ec91b53934fb0511896a94bfe" style="width: 100.0%; height: 100.0%;">1895 Brookside Blvd, Manitoba, Canada</div>`)[0];
+                popup_b992a46e3aca43af34324c7d83122b1a.setContent(html_54ea6f4ec91b53934fb0511896a94bfe);
+            
+        
+
+        marker_7f719190a8b76102e693d1d5559054e3.bindPopup(popup_b992a46e3aca43af34324c7d83122b1a)
+        ;
+
+        
+    
+    
+            var marker_4eae2ca8fdcb92208b38c586d8eaa883 = L.marker(
+                [49.947168, -97.2279904],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_d8d0f0775df227b3402e4bf387ea5a87 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003ePeterbilt Manitoba (Rte 90)\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_4eae2ca8fdcb92208b38c586d8eaa883.setIcon(div_icon_d8d0f0775df227b3402e4bf387ea5a87);
+        
+    
+            var marker_d1c94d596bb9f7a7991847dc86c21820 = L.marker(
+                [49.8868171, -97.1011095],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_bb3547168b3ac840bfe78fc4bcea3a8c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d1c94d596bb9f7a7991847dc86c21820.setIcon(icon_bb3547168b3ac840bfe78fc4bcea3a8c);
+        
+    
+        var popup_7e261e47b92cb11b10bc13ce53a3d287 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_8f15800218f9e17cabb032cafbf984e9 = $(`<div id="html_8f15800218f9e17cabb032cafbf984e9" style="width: 100.0%; height: 100.0%;">454 Archibald St, Manitoba, Canada</div>`)[0];
+                popup_7e261e47b92cb11b10bc13ce53a3d287.setContent(html_8f15800218f9e17cabb032cafbf984e9);
+            
+        
+
+        marker_d1c94d596bb9f7a7991847dc86c21820.bindPopup(popup_7e261e47b92cb11b10bc13ce53a3d287)
+        ;
+
+        
+    
+    
+            var marker_8c0a058bda6303c9f6556aa985d188ff = L.marker(
+                [49.8868171, -97.1011095],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_9262ee9d00ee53cc0590bda326eede43 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eRakowski Cartage and Wrecking Ltd.\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_8c0a058bda6303c9f6556aa985d188ff.setIcon(div_icon_9262ee9d00ee53cc0590bda326eede43);
+        
+    
+            var marker_be04b7ad4e613c5fcc127d12de58c088 = L.marker(
+                [49.9417864, -97.2261541],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_5925f3c502564bb00e75795f66bdddd3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_be04b7ad4e613c5fcc127d12de58c088.setIcon(icon_5925f3c502564bb00e75795f66bdddd3);
+        
+    
+        var popup_30aefbe588b13609e623c1cae2306e5d = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_0dac347d01cd8cbd78f4e9f32e58af96 = $(`<div id="html_0dac347d01cd8cbd78f4e9f32e58af96" style="width: 100.0%; height: 100.0%;">200 Lucas Ave, Manitoba, Canada</div>`)[0];
+                popup_30aefbe588b13609e623c1cae2306e5d.setContent(html_0dac347d01cd8cbd78f4e9f32e58af96);
+            
+        
+
+        marker_be04b7ad4e613c5fcc127d12de58c088.bindPopup(popup_30aefbe588b13609e623c1cae2306e5d)
+        ;
+
+        
+    
+    
+            var marker_feee2197a6bd5d2f4db6e44033e4d4af = L.marker(
+                [49.9417864, -97.2261541],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_54fdb010ec670b267bb2646c3754562b = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eRyder Trucks Rental Canada Ltd.\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_feee2197a6bd5d2f4db6e44033e4d4af.setIcon(div_icon_54fdb010ec670b267bb2646c3754562b);
+        
+    
+            var marker_ace66b762a5715b8476e7b62db551db6 = L.marker(
+                [49.9277947, -96.9825733],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_40eafdbadd22bd21e1271e2ff2e79958 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ace66b762a5715b8476e7b62db551db6.setIcon(icon_40eafdbadd22bd21e1271e2ff2e79958);
+        
+    
+        var popup_ce09e5b3978537f9f8ffbba04389b0ab = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_b1c6f7cc85b82b18dc75cc01e862c0ec = $(`<div id="html_b1c6f7cc85b82b18dc75cc01e862c0ec" style="width: 100.0%; height: 100.0%;">216 Jean Marc Ave, Manitoba, Canada</div>`)[0];
+                popup_ce09e5b3978537f9f8ffbba04389b0ab.setContent(html_b1c6f7cc85b82b18dc75cc01e862c0ec);
+            
+        
+
+        marker_ace66b762a5715b8476e7b62db551db6.bindPopup(popup_ce09e5b3978537f9f8ffbba04389b0ab)
+        ;
+
+        
+    
+    
+            var marker_74d09b2983df8dd26dac2dd40159480e = L.marker(
+                [49.9277947, -96.9825733],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_1467bde78172c4916841ff1979cd1786 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eS and S Transport Ltd.\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_74d09b2983df8dd26dac2dd40159480e.setIcon(div_icon_1467bde78172c4916841ff1979cd1786);
+        
+    
+            var marker_1065517decedf7e052d012e6baae6bc6 = L.marker(
+                [49.1849548, -97.9785024],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_32e3f2afe668f6308fdc688520bdfaff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1065517decedf7e052d012e6baae6bc6.setIcon(icon_32e3f2afe668f6308fdc688520bdfaff);
+        
+    
+        var popup_304d3f14e22db9c98da40c1c4cf761cd = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_a4f15694a798be7782aafa5825339b58 = $(`<div id="html_a4f15694a798be7782aafa5825339b58" style="width: 100.0%; height: 100.0%;">12100 Dickens Rd, Manitoba, Canada</div>`)[0];
+                popup_304d3f14e22db9c98da40c1c4cf761cd.setContent(html_a4f15694a798be7782aafa5825339b58);
+            
+        
+
+        marker_1065517decedf7e052d012e6baae6bc6.bindPopup(popup_304d3f14e22db9c98da40c1c4cf761cd)
+        ;
+
+        
+    
+    
+            var marker_3cd96501ef8a397cde0eb7f54e9e5678 = L.marker(
+                [49.1849548, -97.9785024],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_ba1b3397d16f59b8c9512c88b041fc51 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eStars Truck \u0026 Auto Repair Service LTD.\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_3cd96501ef8a397cde0eb7f54e9e5678.setIcon(div_icon_ba1b3397d16f59b8c9512c88b041fc51);
+        
+    
+            var marker_6c7be2d9d3fec747f4ae512129bb1ce8 = L.marker(
+                [49.8865334, -97.0424424],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_41f62553c2f8d6d8cfe57c0b07261c94 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6c7be2d9d3fec747f4ae512129bb1ce8.setIcon(icon_41f62553c2f8d6d8cfe57c0b07261c94);
+        
+    
+        var popup_a336aa77ecaeaeafad8cf9a87ca4dc85 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_d1bfd5df5f3fccaa1342c9c3aa045090 = $(`<div id="html_d1bfd5df5f3fccaa1342c9c3aa045090" style="width: 100.0%; height: 100.0%;">1655 Dugald Rd, Manitoba, Canada</div>`)[0];
+                popup_a336aa77ecaeaeafad8cf9a87ca4dc85.setContent(html_d1bfd5df5f3fccaa1342c9c3aa045090);
+            
+        
+
+        marker_6c7be2d9d3fec747f4ae512129bb1ce8.bindPopup(popup_a336aa77ecaeaeafad8cf9a87ca4dc85)
+        ;
+
+        
+    
+    
+            var marker_2333f9a9ab9ee1dc8189755cd7efe694 = L.marker(
+                [49.8865334, -97.0424424],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_c23fcb80adb142be00ccd0bf4cc70dd6 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eDLH Group - Tereck Diesel Ltd\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_2333f9a9ab9ee1dc8189755cd7efe694.setIcon(div_icon_c23fcb80adb142be00ccd0bf4cc70dd6);
+        
+    
+            var marker_1f0f3cdb98c229545baf5b2a076926ca = L.marker(
+                [49.9275066, -97.1240837],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_f0a80c0835e6c0efb68167b8eaeb6720 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1f0f3cdb98c229545baf5b2a076926ca.setIcon(icon_f0a80c0835e6c0efb68167b8eaeb6720);
+        
+    
+        var popup_b89b8b21569086961f858a62715c06b7 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_6d763d39b5880b7f21e554341432b780 = $(`<div id="html_6d763d39b5880b7f21e554341432b780" style="width: 100.0%; height: 100.0%;">2595 Inkster Blvd, Manitoba, Canada</div>`)[0];
+                popup_b89b8b21569086961f858a62715c06b7.setContent(html_6d763d39b5880b7f21e554341432b780);
+            
+        
+
+        marker_1f0f3cdb98c229545baf5b2a076926ca.bindPopup(popup_b89b8b21569086961f858a62715c06b7)
+        ;
+
+        
+    
+    
+            var marker_1e7ed90d1af79538ebc5c90f1e56616f = L.marker(
+                [49.9275066, -97.1240837],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_249dca9b1780f5d706e9d46cef59a627 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eTransX Group of Companies\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_1e7ed90d1af79538ebc5c90f1e56616f.setIcon(div_icon_249dca9b1780f5d706e9d46cef59a627);
+        
+    
+            var marker_19c70a1611a5f2e8ecdda5f1be1a72b8 = L.marker(
+                [49.9092084, -96.9796661],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_254bd4160cbd2f8941098a2043f202ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_19c70a1611a5f2e8ecdda5f1be1a72b8.setIcon(icon_254bd4160cbd2f8941098a2043f202ae);
+        
+    
+        var popup_a8d876cd50d57964b527d876df065044 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_fb7da0991aae9ba87737c6bdff297aec = $(`<div id="html_fb7da0991aae9ba87737c6bdff297aec" style="width: 100.0%; height: 100.0%;">1300 Redonda St, Manitoba, Canada</div>`)[0];
+                popup_a8d876cd50d57964b527d876df065044.setContent(html_fb7da0991aae9ba87737c6bdff297aec);
+            
+        
+
+        marker_19c70a1611a5f2e8ecdda5f1be1a72b8.bindPopup(popup_a8d876cd50d57964b527d876df065044)
+        ;
+
+        
+    
+    
+            var marker_53f0387196e8de3c5e61abfc9fb27da3 = L.marker(
+                [49.9092084, -96.9796661],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_780a6dfee15816d8316f5840e877e1c8 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eTrappers Transport Ltd.\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_53f0387196e8de3c5e61abfc9fb27da3.setIcon(div_icon_780a6dfee15816d8316f5840e877e1c8);
+        
+    
+            var marker_d5b232c5c3b23de7eb862b5ebc3c46b8 = L.marker(
+                [49.9465493, -97.2243844],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_11244b31e32f62bc03a97bca32be7d40 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d5b232c5c3b23de7eb862b5ebc3c46b8.setIcon(icon_11244b31e32f62bc03a97bca32be7d40);
+        
+    
+        var popup_0540b227955b6c7b84ae1a5b78ec35ae = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_a6a7a7015fc7f0d3cff5f2baf2a2436b = $(`<div id="html_a6a7a7015fc7f0d3cff5f2baf2a2436b" style="width: 100.0%; height: 100.0%;">2529 Inkster Blvd, Manitoba, Canada</div>`)[0];
+                popup_0540b227955b6c7b84ae1a5b78ec35ae.setContent(html_a6a7a7015fc7f0d3cff5f2baf2a2436b);
+            
+        
+
+        marker_d5b232c5c3b23de7eb862b5ebc3c46b8.bindPopup(popup_0540b227955b6c7b84ae1a5b78ec35ae)
+        ;
+
+        
+    
+    
+            var marker_171071c8480bdd29473eb2decf8e30a1 = L.marker(
+                [49.9465493, -97.2243844],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_f03e64e57186346ead11176a3365d919 = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eWajax (Inkster)\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_171071c8480bdd29473eb2decf8e30a1.setIcon(div_icon_f03e64e57186346ead11176a3365d919);
+        
+    
+            var marker_843f3303af0043fe35975190d1b0a12c = L.marker(
+                [49.9372865, -97.2215394],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_2313c525ec2f55aaf615fae5be703258 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_843f3303af0043fe35975190d1b0a12c.setIcon(icon_2313c525ec2f55aaf615fae5be703258);
+        
+    
+        var popup_4e916a39d507fc995ada012bfe14fa7b = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_c10d14314c0128519e9161167f0bff94 = $(`<div id="html_c10d14314c0128519e9161167f0bff94" style="width: 100.0%; height: 100.0%;">375 Oak Point Hwy, Manitoba, Canada</div>`)[0];
+                popup_4e916a39d507fc995ada012bfe14fa7b.setContent(html_c10d14314c0128519e9161167f0bff94);
+            
+        
+
+        marker_843f3303af0043fe35975190d1b0a12c.bindPopup(popup_4e916a39d507fc995ada012bfe14fa7b)
+        ;
+
+        
+    
+    
+            var marker_ef438b253c5b7a4b1fc78a1db7cb5ad5 = L.marker(
+                [49.9372865, -97.2215394],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_1d4406bf86d26893b11e0f166d2440cb = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eWaste Connections of Canada\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_ef438b253c5b7a4b1fc78a1db7cb5ad5.setIcon(div_icon_1d4406bf86d26893b11e0f166d2440cb);
+        
+    
+            var marker_86528e845cce01d3c74ef3b9a0bb9469 = L.marker(
+                [49.9393796, -97.2264776],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var icon_639b9fcf313bc77e620abb2bedce375c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_86528e845cce01d3c74ef3b9a0bb9469.setIcon(icon_639b9fcf313bc77e620abb2bedce375c);
+        
+    
+        var popup_e7ea887124244a49478a6a7b4088c3ee = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_6cbcb7ec0962696dc3e070d53264ab50 = $(`<div id="html_6cbcb7ec0962696dc3e070d53264ab50" style="width: 100.0%; height: 100.0%;">515 Oak Point Hwy, Manitoba, Canada</div>`)[0];
+                popup_e7ea887124244a49478a6a7b4088c3ee.setContent(html_6cbcb7ec0962696dc3e070d53264ab50);
+            
+        
+
+        marker_86528e845cce01d3c74ef3b9a0bb9469.bindPopup(popup_e7ea887124244a49478a6a7b4088c3ee)
+        ;
+
+        
+    
+    
+            var marker_9b1e94d8e8b33aee19377b00a81e8147 = L.marker(
+                [49.9393796, -97.2264776],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            var div_icon_de44ebcee12a6879cc52492df790bbdb = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                font-size:11px;\n                color:black;\n                background-color: rgba(255,255,255,0.8);\n                padding:2px 4px;\n                border-radius:3px;\n                white-space: nowrap;\n            \"\u003e\n                \u003cb\u003eWestrans\u003c/b\u003e\u003cbr/\u003e\n                \u003cspan style=\"color:gray;\"\u003eT\u003c/span\u003e\n            \u003c/div\u003e\n            ",
+  "iconSize": [150, 36],
+  "iconAnchor": [0, 0],
+  "popupAnchor": null,
+  "className": "empty",
+});
+            marker_9b1e94d8e8b33aee19377b00a81e8147.setIcon(div_icon_de44ebcee12a6879cc52492df790bbdb);
+        
+    
+            tile_layer_a8e6c0a90f95ff6fbfc6687605cff539.addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+    
+            tile_layer_a8e6c0a90f95ff6fbfc6687605cff539.addTo(map_7cdf8623c6e921e26546820ebea4c66b);
+        
+</script>
+</html>
